@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable arrow-parens */
 /* eslint-disable react/state-in-constructor */
 import React, { Component } from 'react';
@@ -71,7 +72,6 @@ const mapStateToProps = state => ({
   }, {}),
 });
 
-const mapDispatchToProps = dispatch =>
-  bindActionCreators(CartActions, dispatch);
+const mapDispatchToProps = dispatch => bindActionCreators(CartActions, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
